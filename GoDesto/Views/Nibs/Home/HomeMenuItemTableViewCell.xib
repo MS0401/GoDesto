@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeMenuItemTableViewCell" rowHeight="469" id="XK0-pN-SLq" customClass="HomeMenuItemTableViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="469"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XK0-pN-SLq" id="gBt-gh-VfU">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="468.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zym-XC-f3N">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="453.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="2z5-7C-hKb">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="XK0-pN-SLq" id="M7E-CJ-eN0"/>
+                            <outlet property="delegate" destination="XK0-pN-SLq" id="NC8-ck-FZf"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zym-XC-f3N" secondAttribute="trailing" id="FgN-Vz-A3o"/>
+                    <constraint firstAttribute="bottom" secondItem="Zym-XC-f3N" secondAttribute="bottom" constant="15" id="PrV-p7-pQl"/>
+                    <constraint firstItem="Zym-XC-f3N" firstAttribute="leading" secondItem="gBt-gh-VfU" secondAttribute="leading" id="R1M-fb-7f2"/>
+                    <constraint firstItem="Zym-XC-f3N" firstAttribute="top" secondItem="gBt-gh-VfU" secondAttribute="top" id="pUo-hf-wMt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="Zym-XC-f3N" id="e3D-jy-i56"/>
+            </connections>
+            <point key="canvasLocation" x="14.5" y="475.5"/>
+        </tableViewCell>
+    </objects>
+</document>

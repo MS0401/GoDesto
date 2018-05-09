@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThingsToDoMenuTableViewCell" rowHeight="290" id="wi6-OF-brh" customClass="ThingsToDoMenuTableViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wi6-OF-brh" id="5w9-Hy-AAM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eB5-pO-v9w">
+                        <rect key="frame" x="10" y="5" width="355" height="285"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="RAF-R1-s9s">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="wi6-OF-brh" id="b6k-9U-GoD"/>
+                            <outlet property="delegate" destination="wi6-OF-brh" id="YVQ-6e-NKr"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eB5-pO-v9w" secondAttribute="bottom" id="1Uz-wm-7U1"/>
+                    <constraint firstItem="eB5-pO-v9w" firstAttribute="top" secondItem="5w9-Hy-AAM" secondAttribute="top" constant="5" id="22V-lP-Ekg"/>
+                    <constraint firstItem="eB5-pO-v9w" firstAttribute="leading" secondItem="5w9-Hy-AAM" secondAttribute="leading" constant="10" id="XcU-HW-SSl"/>
+                    <constraint firstAttribute="trailing" secondItem="eB5-pO-v9w" secondAttribute="trailing" constant="10" id="rbm-S5-9fE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="eB5-pO-v9w" id="J1b-43-ggs"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="381"/>
+        </tableViewCell>
+    </objects>
+</document>

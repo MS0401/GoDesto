@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookingInfoCell" id="KGk-i7-Jjw" customClass="BookingInfoCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQZ-vb-IVc" userLabel="titleView">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="59.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-Xy-1Ji">
+                                <rect key="frame" x="10" y="19" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="36g-bs-1Yj"/>
+                                    <constraint firstAttribute="height" constant="20" id="mJw-qM-uPV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckIn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-58-g8z">
+                                <rect key="frame" x="46" y="20" width="106" height="19.5"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1i5-58-g8z" secondAttribute="bottom" constant="20" id="GhC-Yx-bkj"/>
+                            <constraint firstItem="UQP-Xy-1Ji" firstAttribute="leading" secondItem="DQZ-vb-IVc" secondAttribute="leading" constant="10" id="Ndz-TS-r97"/>
+                            <constraint firstAttribute="trailing" secondItem="1i5-58-g8z" secondAttribute="trailing" constant="8" id="Yi6-SU-POp"/>
+                            <constraint firstItem="1i5-58-g8z" firstAttribute="leading" secondItem="UQP-Xy-1Ji" secondAttribute="trailing" constant="16" id="cyZ-YU-KK9"/>
+                            <constraint firstItem="1i5-58-g8z" firstAttribute="centerY" secondItem="DQZ-vb-IVc" secondAttribute="centerY" id="fC6-zV-Qf9"/>
+                            <constraint firstItem="1i5-58-g8z" firstAttribute="top" secondItem="DQZ-vb-IVc" secondAttribute="top" constant="20" id="nuj-GC-ARB"/>
+                            <constraint firstItem="UQP-Xy-1Ji" firstAttribute="centerY" secondItem="DQZ-vb-IVc" secondAttribute="centerY" id="v3j-St-MIM"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMp-cW-wbY" userLabel="detailView">
+                        <rect key="frame" x="160" y="0.0" width="160" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-09-08" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yp-45-Ero">
+                                <rect key="frame" x="0.0" y="20" width="160" height="19.5"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3yp-45-Ero" secondAttribute="trailing" id="0jd-GD-aMv"/>
+                            <constraint firstItem="3yp-45-Ero" firstAttribute="leading" secondItem="CMp-cW-wbY" secondAttribute="leading" id="5Xg-bv-EpE"/>
+                            <constraint firstAttribute="bottom" secondItem="3yp-45-Ero" secondAttribute="bottom" constant="20" id="6m6-MY-qSe"/>
+                            <constraint firstItem="3yp-45-Ero" firstAttribute="top" secondItem="CMp-cW-wbY" secondAttribute="top" constant="20" id="r9N-B1-jKK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DQZ-vb-IVc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="20u-OJ-qpl"/>
+                    <constraint firstAttribute="bottom" secondItem="DQZ-vb-IVc" secondAttribute="bottom" id="CUM-2X-w21"/>
+                    <constraint firstItem="CMp-cW-wbY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fr1-bK-srE"/>
+                    <constraint firstAttribute="trailing" secondItem="CMp-cW-wbY" secondAttribute="trailing" id="OVK-LN-G7E"/>
+                    <constraint firstItem="DQZ-vb-IVc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y67-g4-ulF"/>
+                    <constraint firstAttribute="bottom" secondItem="CMp-cW-wbY" secondAttribute="bottom" id="f0T-zD-kks"/>
+                    <constraint firstItem="CMp-cW-wbY" firstAttribute="leading" secondItem="DQZ-vb-IVc" secondAttribute="trailing" id="fyT-Qf-C6U"/>
+                    <constraint firstItem="DQZ-vb-IVc" firstAttribute="width" secondItem="CMp-cW-wbY" secondAttribute="width" id="p0i-aT-Yh1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSubtitle" destination="3yp-45-Ero" id="JBk-nV-uKv"/>
+                <outlet property="lblTitle" destination="1i5-58-g8z" id="c95-q0-pfw"/>
+            </connections>
+            <point key="canvasLocation" x="-445" y="-37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkMark" width="30" height="30"/>
+    </resources>
+</document>

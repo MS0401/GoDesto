@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MYRIADPRO-SEMIBOLD.OTF">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FiltersTypesTableViewCell" rowHeight="140" id="R5W-NZ-Pbd" customClass="FiltersTypesTableViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R5W-NZ-Pbd" id="Dhk-mQ-OsJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-El-9yo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1e-fX-8nx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-4y-uGW">
+                                        <rect key="frame" x="15" y="8.5" width="290" height="14"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666668650000005" blue="0.66666668650000005" alpha="0.36499201640000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BrV-hZ-6lt"/>
+                                    <constraint firstItem="Go5-4y-uGW" firstAttribute="centerY" secondItem="m1e-fX-8nx" secondAttribute="centerY" id="Mhq-OK-HVe"/>
+                                    <constraint firstItem="Go5-4y-uGW" firstAttribute="leading" secondItem="m1e-fX-8nx" secondAttribute="leading" constant="15" id="Qq7-F8-POM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Go5-4y-uGW" secondAttribute="trailing" constant="15" id="d6K-aU-wfN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-4E-Sym">
+                                <rect key="frame" x="1.5" y="38" width="317" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-Bi-PkE">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LbQ-y3-tWS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="tintColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="All inclusive">
+                                            <color key="titleColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSelectType:" destination="R5W-NZ-Pbd" eventType="touchUpInside" id="g5L-G3-X34"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRu-AK-ch0">
+                                        <rect key="frame" x="107" y="0.0" width="103" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="8EJ-p5-flb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="tintColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Room only">
+                                            <color key="titleColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSelectType:" destination="R5W-NZ-Pbd" eventType="touchUpInside" id="UHW-6m-qzX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trz-Mz-7Ft">
+                                        <rect key="frame" x="214" y="0.0" width="103" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="aKY-uE-Gu1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="tintColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="Breakfast included">
+                                            <color key="titleColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSelectType:" destination="R5W-NZ-Pbd" eventType="touchUpInside" id="uHd-fu-DXK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="trz-Mz-7Ft" firstAttribute="width" secondItem="OUc-Bi-PkE" secondAttribute="width" id="Ha2-rS-r7J"/>
+                                    <constraint firstItem="XRu-AK-ch0" firstAttribute="width" secondItem="OUc-Bi-PkE" secondAttribute="width" id="xrZ-4e-Oo9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-v3-86m">
+                                <rect key="frame" x="55" y="77" width="210" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-Jc-hBd">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ECC-WA-8do"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="tintColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                        <state key="normal" title="Half board">
+                                            <color key="titleColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSelectType:" destination="R5W-NZ-Pbd" eventType="touchUpInside" id="n40-vS-yQM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-Fx-8O4">
+                                        <rect key="frame" x="107" y="23" width="103" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="J61-1u-C6r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="tintColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                        <state key="normal" title="Full board">
+                                            <color key="titleColor" red="0.1174479167" green="0.55677083329999999" blue="0.83702852670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionSelectType:" destination="R5W-NZ-Pbd" eventType="touchUpInside" id="Y6h-3z-Obw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5BI-m0-srr"/>
+                                    <constraint firstItem="sl2-Fx-8O4" firstAttribute="width" secondItem="dxn-Jc-hBd" secondAttribute="width" id="cq1-kV-Nnh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aaK-4E-Sym" firstAttribute="top" secondItem="m1e-fX-8nx" secondAttribute="bottom" constant="8" id="8Wt-0d-32w"/>
+                            <constraint firstAttribute="trailing" secondItem="m1e-fX-8nx" secondAttribute="trailing" id="8hM-aB-bNs"/>
+                            <constraint firstItem="m1e-fX-8nx" firstAttribute="top" secondItem="9GF-El-9yo" secondAttribute="top" id="8v5-ZK-osa"/>
+                            <constraint firstItem="Qwp-v3-86m" firstAttribute="top" secondItem="aaK-4E-Sym" secondAttribute="bottom" constant="4" id="DcV-SL-ut5"/>
+                            <constraint firstItem="aaK-4E-Sym" firstAttribute="centerX" secondItem="9GF-El-9yo" secondAttribute="centerX" id="VfC-DO-B5d"/>
+                            <constraint firstItem="m1e-fX-8nx" firstAttribute="leading" secondItem="9GF-El-9yo" secondAttribute="leading" id="Xsl-cW-Phb"/>
+                            <constraint firstItem="Qwp-v3-86m" firstAttribute="centerX" secondItem="9GF-El-9yo" secondAttribute="centerX" id="YEl-Dt-L6q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9GF-El-9yo" firstAttribute="top" secondItem="Dhk-mQ-OsJ" secondAttribute="top" id="0nu-1X-R0Y"/>
+                    <constraint firstItem="9GF-El-9yo" firstAttribute="leading" secondItem="Dhk-mQ-OsJ" secondAttribute="leading" id="Zfz-uF-Kkf"/>
+                    <constraint firstAttribute="bottom" secondItem="9GF-El-9yo" secondAttribute="bottom" id="Zjf-l5-SU9"/>
+                    <constraint firstAttribute="trailing" secondItem="9GF-El-9yo" secondAttribute="trailing" id="bza-MW-S6w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnType1" destination="OUc-Bi-PkE" id="7Fm-VX-zcO"/>
+                <outlet property="btnType2" destination="XRu-AK-ch0" id="RNh-RI-0lr"/>
+                <outlet property="btnType3" destination="trz-Mz-7Ft" id="KX9-wy-3hD"/>
+                <outlet property="btnType4" destination="dxn-Jc-hBd" id="aaG-6s-ifd"/>
+                <outlet property="btnType5" destination="sl2-Fx-8O4" id="wpW-LN-p4b"/>
+                <outlet property="lblTitle" destination="Go5-4y-uGW" id="v3m-9D-Y1s"/>
+            </connections>
+            <point key="canvasLocation" x="129" y="166"/>
+        </tableViewCell>
+    </objects>
+</document>

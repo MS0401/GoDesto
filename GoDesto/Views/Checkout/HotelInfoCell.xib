@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelInfoCell" rowHeight="332" id="Ejg-BK-gOv" customClass="HotelInfoCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ejg-BK-gOv" id="3SF-CN-c5Y">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="379.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7u9-N3-c8o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="241.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="242" id="8u2-2v-QgG"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gc1-7N-JiR">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="Ejg-BK-gOv" id="wkH-oi-RiE"/>
+                            <outlet property="delegate" destination="Ejg-BK-gOv" id="oR7-hW-PTV"/>
+                        </connections>
+                    </collectionView>
+                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-tu-f6N">
+                        <rect key="frame" x="187.5" y="201.5" width="0.0" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="GWM-DA-rFi"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </pageControl>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIj-Vi-EGG" userLabel="InfoView">
+                        <rect key="frame" x="0.0" y="241.5" width="375" height="138"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dubai Palm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-ve-HXN">
+                                <rect key="frame" x="10" y="15" width="350" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheikh Mohammed Bin Zayed Rd, Arabian Ranches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZk-tB-SQd">
+                                <rect key="frame" x="10" y="83" width="350" height="40"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blI-Gz-3pf" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="10" y="59" width="104" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" placeholder="YES" id="WRB-v0-beh"/>
+                                    <constraint firstAttribute="width" constant="104" placeholder="YES" id="fMU-Ty-M2r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="1" green="0.8385407198" blue="0.092788216359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" red="1" green="0.8385407198" blue="0.092788216359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="1" green="0.8385407198" blue="0.092788216359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.5568627451" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BQq-ve-HXN" firstAttribute="leading" secondItem="jIj-Vi-EGG" secondAttribute="leading" constant="10" id="0zv-aE-NdW">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="blI-Gz-3pf" firstAttribute="leading" secondItem="jIj-Vi-EGG" secondAttribute="leading" constant="10" id="89r-FV-AIt">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="EZk-tB-SQd" firstAttribute="leading" secondItem="BQq-ve-HXN" secondAttribute="leading" id="9zg-gq-6ac"/>
+                            <constraint firstItem="EZk-tB-SQd" firstAttribute="top" secondItem="blI-Gz-3pf" secondAttribute="bottom" constant="4" id="IJG-EO-TiF"/>
+                            <constraint firstAttribute="trailing" secondItem="BQq-ve-HXN" secondAttribute="trailing" constant="15" id="IQW-fp-EKn"/>
+                            <constraint firstItem="blI-Gz-3pf" firstAttribute="top" secondItem="BQq-ve-HXN" secondAttribute="bottom" constant="4" id="Lv1-GP-gHG"/>
+                            <constraint firstItem="BQq-ve-HXN" firstAttribute="top" secondItem="jIj-Vi-EGG" secondAttribute="top" constant="15" id="cDk-NX-1qR"/>
+                            <constraint firstAttribute="bottom" secondItem="EZk-tB-SQd" secondAttribute="bottom" constant="15" id="f8z-j2-gk8"/>
+                            <constraint firstItem="blI-Gz-3pf" firstAttribute="centerY" secondItem="jIj-Vi-EGG" secondAttribute="centerY" id="hag-5b-a19"/>
+                            <constraint firstAttribute="trailing" secondItem="EZk-tB-SQd" secondAttribute="trailing" constant="15" id="slg-e0-aNw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jIj-Vi-EGG" secondAttribute="bottom" id="2UN-zN-od7"/>
+                    <constraint firstItem="LMW-tu-f6N" firstAttribute="centerX" secondItem="3SF-CN-c5Y" secondAttribute="centerX" id="8Ha-Pv-PvT"/>
+                    <constraint firstItem="jIj-Vi-EGG" firstAttribute="top" secondItem="7u9-N3-c8o" secondAttribute="bottom" id="TEO-dx-d8d"/>
+                    <constraint firstAttribute="trailing" secondItem="jIj-Vi-EGG" secondAttribute="trailing" id="UvO-o7-Iyf"/>
+                    <constraint firstItem="7u9-N3-c8o" firstAttribute="top" secondItem="3SF-CN-c5Y" secondAttribute="top" id="VM9-fJ-e3l"/>
+                    <constraint firstAttribute="trailing" secondItem="7u9-N3-c8o" secondAttribute="trailing" id="YLp-1A-s0B"/>
+                    <constraint firstItem="LMW-tu-f6N" firstAttribute="bottom" secondItem="7u9-N3-c8o" secondAttribute="bottom" id="Ybj-Tw-bWE"/>
+                    <constraint firstItem="jIj-Vi-EGG" firstAttribute="leading" secondItem="3SF-CN-c5Y" secondAttribute="leading" id="d0w-nm-Jli"/>
+                    <constraint firstItem="7u9-N3-c8o" firstAttribute="leading" secondItem="3SF-CN-c5Y" secondAttribute="leading" id="kX1-vA-ZYB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.17254901959999999" green="0.63137254899999995" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imageCollectionView" destination="7u9-N3-c8o" id="ZuX-RK-ZAP"/>
+                <outlet property="imagePageControl" destination="LMW-tu-f6N" id="olb-Ec-6HP"/>
+                <outlet property="lblAddress" destination="EZk-tB-SQd" id="MDn-vt-O0X"/>
+                <outlet property="lblName" destination="BQq-ve-HXN" id="D3e-UM-q2e"/>
+                <outlet property="viewRating" destination="blI-Gz-3pf" id="MfF-gx-FPW"/>
+            </connections>
+            <point key="canvasLocation" x="-251" y="-378"/>
+        </tableViewCell>
+    </objects>
+</document>

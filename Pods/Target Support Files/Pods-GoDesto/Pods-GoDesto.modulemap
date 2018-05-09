@@ -1,0 +1,6 @@
+framework module Pods_GoDesto {
+  umbrella header "Pods-GoDesto-umbrella.h"
+
+  export *
+  module * { export * }
+}

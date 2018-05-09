@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ThingsToDoFilterAutoCompleteTableViewCell" rowHeight="154" id="TCg-Vm-IbW" customClass="ThingsToDoFilterAutoCompleteTableViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TCg-Vm-IbW" id="02V-eo-ZlT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Popular Cusines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykd-6w-CuT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                        <color key="backgroundColor" red="0.89668498389999995" green="0.89668498389999995" blue="0.89668498389999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="vCP-Ua-XBn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vsu-nw-lbU">
+                        <rect key="frame" x="20" y="68" width="335" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="f2i-zd-CfX"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vsu-nw-lbU" secondAttribute="trailing" constant="4" id="Lp3-z5-DHl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ykd-6w-CuT" secondAttribute="trailing" constant="-16" id="VlV-xD-yx4"/>
+                    <constraint firstItem="ykd-6w-CuT" firstAttribute="leading" secondItem="02V-eo-ZlT" secondAttribute="leadingMargin" constant="-16" id="Xb5-pE-9zh"/>
+                    <constraint firstItem="Vsu-nw-lbU" firstAttribute="leading" secondItem="02V-eo-ZlT" secondAttribute="leadingMargin" constant="4" id="Y7V-EI-Vk8"/>
+                    <constraint firstItem="Vsu-nw-lbU" firstAttribute="top" secondItem="ykd-6w-CuT" secondAttribute="bottom" constant="23" id="aTe-nf-2W2"/>
+                    <constraint firstItem="ykd-6w-CuT" firstAttribute="top" secondItem="02V-eo-ZlT" secondAttribute="top" id="hD9-R7-K85"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblTitle" destination="ykd-6w-CuT" id="sUX-Py-HBS"/>
+                <outlet property="txtSearch" destination="Vsu-nw-lbU" id="KFB-xy-dsO"/>
+            </connections>
+            <point key="canvasLocation" x="115.5" y="296"/>
+        </tableViewCell>
+    </objects>
+</document>

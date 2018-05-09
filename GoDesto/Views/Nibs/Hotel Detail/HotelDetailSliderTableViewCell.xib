@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeDetailSliderTableViewCell" rowHeight="320" id="1f0-5P-F2P" customClass="HomeDetailSliderTableViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1f0-5P-F2P" id="oFK-eG-4Ol">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q8r-O2-pGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="201" id="msp-pQ-HaT"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8tr-a7-GGl">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="1f0-5P-F2P" id="bKe-Yp-kNr"/>
+                            <outlet property="delegate" destination="1f0-5P-F2P" id="Szr-JU-hD3"/>
+                        </connections>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-4e-kG4">
+                        <rect key="frame" x="121.5" y="161" width="132" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="3wg-E3-bi0"/>
+                            <constraint firstAttribute="width" constant="132" id="jta-zE-QNf"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </pageControl>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DH1-Sl-dQw">
+                        <rect key="frame" x="0.0" y="201" width="375" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-iq-w83">
+                                <rect key="frame" x="16" y="0.0" width="85" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qLj-6y-qxe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="IconShare"/>
+                                <connections>
+                                    <action selector="actionShare:" destination="1f0-5P-F2P" eventType="touchUpInside" id="fgr-6g-IHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAP-7m-xOW">
+                                <rect key="frame" x="102" y="0.0" width="85" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qjT-La-ngF"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="IconHome"/>
+                                <connections>
+                                    <action selector="actionShowPathOnGoogleMap:" destination="1f0-5P-F2P" eventType="touchUpInside" id="stb-SN-sle"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-3e-aXO">
+                                <rect key="frame" x="188" y="0.0" width="85" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xUn-z0-993"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="IconBox"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQA-jA-IRf">
+                                <rect key="frame" x="274" y="0.0" width="85" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="55Q-I5-g5a"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="IconSetting"/>
+                                <connections>
+                                    <action selector="actionShowMenu:" destination="1f0-5P-F2P" eventType="touchUpInside" id="cw8-OD-pJu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0Wl-wh-r5f"/>
+                            <constraint firstAttribute="trailing" secondItem="sQA-jA-IRf" secondAttribute="trailing" constant="16" id="3AA-YN-6wJ"/>
+                            <constraint firstItem="ml1-3e-aXO" firstAttribute="leading" secondItem="KAP-7m-xOW" secondAttribute="trailing" constant="1" id="Hv2-ox-AGo"/>
+                            <constraint firstItem="ml1-3e-aXO" firstAttribute="top" secondItem="DH1-Sl-dQw" secondAttribute="top" id="Iyj-l2-Xe6"/>
+                            <constraint firstItem="iR4-iq-w83" firstAttribute="top" secondItem="DH1-Sl-dQw" secondAttribute="top" id="J18-nR-IaI"/>
+                            <constraint firstItem="iR4-iq-w83" firstAttribute="leading" secondItem="DH1-Sl-dQw" secondAttribute="leading" constant="16" id="Pj8-Bq-zsu"/>
+                            <constraint firstItem="KAP-7m-xOW" firstAttribute="leading" secondItem="iR4-iq-w83" secondAttribute="trailing" constant="1" id="ddM-2D-e3x"/>
+                            <constraint firstItem="sQA-jA-IRf" firstAttribute="top" secondItem="DH1-Sl-dQw" secondAttribute="top" id="fPW-Ty-ZZ5"/>
+                            <constraint firstItem="sQA-jA-IRf" firstAttribute="leading" secondItem="ml1-3e-aXO" secondAttribute="trailing" constant="1" id="gXZ-Rh-Uxa"/>
+                            <constraint firstItem="sQA-jA-IRf" firstAttribute="width" secondItem="iR4-iq-w83" secondAttribute="width" id="nXf-X7-QxV"/>
+                            <constraint firstItem="KAP-7m-xOW" firstAttribute="top" secondItem="DH1-Sl-dQw" secondAttribute="top" id="oyx-h2-QZq"/>
+                            <constraint firstItem="KAP-7m-xOW" firstAttribute="width" secondItem="iR4-iq-w83" secondAttribute="width" id="rOm-DF-wxA"/>
+                            <constraint firstItem="ml1-3e-aXO" firstAttribute="width" secondItem="iR4-iq-w83" secondAttribute="width" id="ven-rB-Sfo"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEZ-Kg-Qrk">
+                        <rect key="frame" x="252" y="259" width="98" height="43"/>
+                        <color key="backgroundColor" red="0.1879970044" green="0.58457244009999998" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="n22-2c-M9Q"/>
+                            <constraint firstAttribute="height" constant="43" id="sTR-td-VIG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                        <state key="normal" title="Book now">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actionBookNow:" destination="1f0-5P-F2P" eventType="touchUpInside" id="EJO-qp-CvT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DH1-Sl-dQw" firstAttribute="leading" secondItem="oFK-eG-4Ol" secondAttribute="leading" id="22l-J9-e1G"/>
+                    <constraint firstAttribute="trailing" secondItem="DH1-Sl-dQw" secondAttribute="trailing" id="CgO-GN-w4q"/>
+                    <constraint firstItem="Zxp-4e-kG4" firstAttribute="top" secondItem="q8r-O2-pGd" secondAttribute="bottom" constant="-40" id="K71-wE-sK4"/>
+                    <constraint firstAttribute="trailing" secondItem="q8r-O2-pGd" secondAttribute="trailing" id="TTI-ja-ZYD"/>
+                    <constraint firstItem="q8r-O2-pGd" firstAttribute="top" secondItem="oFK-eG-4Ol" secondAttribute="top" id="U3O-T3-ZTG"/>
+                    <constraint firstItem="AEZ-Kg-Qrk" firstAttribute="top" secondItem="DH1-Sl-dQw" secondAttribute="bottom" constant="8" id="WZr-rs-zJ1"/>
+                    <constraint firstAttribute="trailing" secondItem="AEZ-Kg-Qrk" secondAttribute="trailing" constant="25" id="Wy0-0Z-1UB"/>
+                    <constraint firstItem="q8r-O2-pGd" firstAttribute="leading" secondItem="oFK-eG-4Ol" secondAttribute="leading" id="eFh-iv-JUn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AEZ-Kg-Qrk" secondAttribute="bottom" constant="7" id="jkQ-Rm-9Wq"/>
+                    <constraint firstItem="DH1-Sl-dQw" firstAttribute="top" secondItem="q8r-O2-pGd" secondAttribute="bottom" id="lvY-Yh-b2R"/>
+                    <constraint firstItem="Zxp-4e-kG4" firstAttribute="centerX" secondItem="oFK-eG-4Ol" secondAttribute="centerX" id="ob8-XB-yrh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnBookNow" destination="AEZ-Kg-Qrk" id="Ebb-da-ozI"/>
+                <outlet property="collectionView" destination="q8r-O2-pGd" id="Sye-VG-8kH"/>
+                <outlet property="pageControll" destination="Zxp-4e-kG4" id="BO5-xZ-uBM"/>
+                <outlet property="viewBottomMenu" destination="DH1-Sl-dQw" id="Gy0-IZ-Zee"/>
+            </connections>
+            <point key="canvasLocation" x="17.5" y="-196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IconBox" width="28" height="29"/>
+        <image name="IconHome" width="25" height="22"/>
+        <image name="IconSetting" width="25" height="23"/>
+        <image name="IconShare" width="25" height="25"/>
+    </resources>
+</document>

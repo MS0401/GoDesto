@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-SEMIBOLD.OTF">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cdo-bP-Qsc" customClass="HomeSliderPopularItemCollectionViewCell" customModule="GoDesto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKV-3C-9t6">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="106"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-30-7gX">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="106"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlayItem" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-jl-5y7">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="106"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solero topas &amp; bodega" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-T5-iOe">
+                                <rect key="frame" x="10" y="87" width="212" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="18"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z4I-jl-5y7" firstAttribute="leading" secondItem="gKV-3C-9t6" secondAttribute="leading" id="1fA-Z2-kkN"/>
+                            <constraint firstItem="oQf-30-7gX" firstAttribute="leading" secondItem="gKV-3C-9t6" secondAttribute="leading" id="9iT-CB-pYa"/>
+                            <constraint firstItem="oQf-30-7gX" firstAttribute="top" secondItem="gKV-3C-9t6" secondAttribute="top" id="MSX-18-JJ0"/>
+                            <constraint firstAttribute="trailing" secondItem="3gQ-T5-iOe" secondAttribute="trailing" constant="10" id="Sxw-uE-giw"/>
+                            <constraint firstAttribute="bottom" secondItem="Z4I-jl-5y7" secondAttribute="bottom" id="Vh9-BV-sJv"/>
+                            <constraint firstAttribute="trailing" secondItem="oQf-30-7gX" secondAttribute="trailing" id="Xw9-J0-QHo"/>
+                            <constraint firstAttribute="bottom" secondItem="oQf-30-7gX" secondAttribute="bottom" id="dgF-gT-vKg"/>
+                            <constraint firstItem="3gQ-T5-iOe" firstAttribute="leading" secondItem="gKV-3C-9t6" secondAttribute="leading" constant="10" id="gSN-Vs-YS3"/>
+                            <constraint firstAttribute="bottom" secondItem="3gQ-T5-iOe" secondAttribute="bottom" constant="5" id="j5N-5o-qqk"/>
+                            <constraint firstItem="Z4I-jl-5y7" firstAttribute="top" secondItem="gKV-3C-9t6" secondAttribute="top" id="u2e-mo-lKu"/>
+                            <constraint firstAttribute="trailing" secondItem="Z4I-jl-5y7" secondAttribute="trailing" id="uFA-FN-LSc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gKV-3C-9t6" secondAttribute="trailing" id="Cel-Ry-PDw"/>
+                <constraint firstAttribute="bottom" secondItem="gKV-3C-9t6" secondAttribute="bottom" id="hBT-6K-cB7"/>
+                <constraint firstItem="gKV-3C-9t6" firstAttribute="top" secondItem="Cdo-bP-Qsc" secondAttribute="top" id="jBU-bV-BTP"/>
+                <constraint firstItem="gKV-3C-9t6" firstAttribute="leading" secondItem="Cdo-bP-Qsc" secondAttribute="leading" id="t8t-an-Ung"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1v5-SU-X17"/>
+            <size key="customSize" width="232" height="106"/>
+            <connections>
+                <outlet property="imgItem" destination="oQf-30-7gX" id="5lD-dL-Z36"/>
+                <outlet property="lblName" destination="3gQ-T5-iOe" id="1ZP-GI-b0e"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="-435"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image1" width="375" height="666"/>
+        <image name="overlayItem" width="251" height="77"/>
+    </resources>
+</document>
